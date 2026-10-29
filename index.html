@@ -1,74 +1,116 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prof. Dr. Daniel Fernandes | Publicações científicas</title>
-<meta name="description" content="Portfólio de publicações científicas em Geociências, Geologia Ambiental e Hidrossedimentologia.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#172d35">
+<meta name="description" content="Portfólio científico do Prof. Dr. Daniel Fernandes — geologia costeira, hidrossedimentologia e geologia ambiental.">
+<title>Daniel Fernandes | Geociências & Pesquisa</title>
 <style>
-:root{--navy:#103049;--teal:#087e83;--paper:#f4f7f8;--text:#233443;--line:#dce7e9}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}header{background:linear-gradient(120deg,#103049,#146773);color:white;padding:66px 22px 55px}.wrap{max-width:920px;margin:auto}header .eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.8rem;opacity:.9}h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.13;margin:12px 0}header p{max-width:730px;opacity:.92}.hero{display:flex;align-items:center;gap:26px}.portrait{width:136px;height:136px;flex:none;border-radius:50%;border:4px solid #ffffffbd;object-fit:cover;background:#d5e6e7}.portrait-placeholder{width:136px;height:136px;flex:none;border-radius:50%;border:4px solid #ffffffbd;display:grid;place-items:center;background:#ffffff26;color:white;font-size:2.3rem;font-weight:700}.hero-name{font-size:1.12rem;font-weight:700;margin:8px 0}.hero-text{flex:1}@media(max-width:600px){.hero{flex-direction:column;text-align:center}.hero p{margin-left:auto;margin-right:auto}}main{padding:38px 22px 60px}h2{color:var(--navy);font-size:1.45rem;margin:34px 0 17px}.intro{background:white;border:1px solid var(--line);padding:22px;border-radius:14px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:23px;display:flex;flex-direction:column;gap:8px;box-shadow:0 5px 18px #183b4810}.tag{color:var(--teal);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:750}.card h3{font-size:1.15rem;margin:0;line-height:1.38}.meta{color:#536876;font-size:.86rem}.card p{margin:3px 0 12px;flex:1}.action{display:inline-block;background:var(--teal);border-radius:9px;padding:10px 16px;color:white;text-decoration:none;font-weight:650}.action:hover{background:#065f64}.action.disabled{background:#e7eeef;color:#62757e;pointer-events:none}.links{display:flex;flex-wrap:wrap;gap:10px}.links a{color:var(--navy);border:1px solid #bdd1d6;background:#fff;text-decoration:none;padding:9px 15px;border-radius:8px;font-weight:600}.foot{color:#6a7c86;text-align:center;padding:23px;font-size:.84rem}small{color:#5d7481}a:focus-visible,button:focus-visible{outline:3px solid #e3a93a;outline-offset:3px}.profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.profile{background:white;border:1px solid var(--line);border-radius:12px;padding:17px;text-decoration:none;color:var(--navy);font-weight:700}.profile span{display:block;color:#617784;font-size:.8rem;font-weight:400}.profile:not([href]){opacity:.58;cursor:default}.qrpanel{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:white;border:1px solid var(--line);padding:24px;border-radius:14px}.qrpanel input{display:block;width:100%;padding:12px;border:1px solid #aac2c9;border-radius:9px;margin:10px 0;font:inherit}.qrpanel button{border:0;background:var(--teal);padding:11px 16px;border-radius:8px;color:white;font:inherit;cursor:pointer}.qrpanel button:disabled{background:#a3b0b5;cursor:default}#qrCanvas{background:#fff;padding:8px;border:1px solid var(--line);border-radius:8px}#qrmsg{font-size:.85rem;color:#526e79}@media(max-width:660px){.qrpanel{grid-template-columns:1fr}#qrCanvas{max-width:100%;height:auto}}
+:root{--deep:#142b32;--ink:#20373c;--slate:#506569;--jade:#267977;--gold:#bf9462;--sand:#f6f2e9;--pale:#f0f5f2;--white:#fff;--line:#dce2dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#f7f8f5;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #ebbd70;outline-offset:3px}
+.container{width:min(1120px,calc(100% - 44px));margin:auto}
+header{position:relative;color:white;overflow:hidden;background:#162e35}
+header::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 0%,#43827d60,transparent 42%);pointer-events:none}
+.topo{position:absolute;inset:0;width:100%;height:100%;opacity:.23;pointer-events:none}
+.topbar{position:relative;display:flex;justify-content:space-between;align-items:center;padding:23px 0;gap:15px}
+.brand{font-weight:760;letter-spacing:.06em;font-size:.9rem}.brand span{color:#dbb080}
+.nav{display:flex;gap:23px;flex-wrap:wrap}.nav a{font-size:.88rem;text-decoration:none;color:#edf5f2}.nav a:hover{text-decoration:underline}
+.hero{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;gap:38px;padding:77px 0 95px}
+.kicker{display:inline-flex;align-items:center;gap:9px;color:#e4bc85;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:750}
+.kicker::before{content:"";width:24px;height:2px;background:#e4bc85}
+.hero h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.1;letter-spacing:-.045em;margin:20px 0 15px;max-width:760px}
+.hero p{font-size:1.08rem;color:#d7e5e1;max-width:640px}
+.hero .identity{font-size:1.02rem;color:#fff;font-weight:650}
+.hero .specialties{color:#d4e3dc;font-size:.94rem}
+.portrait-frame{position:relative;width:212px;height:212px;border-radius:50%;padding:8px;border:1px solid #c6a473;background:#ffffff0f;box-shadow:0 18px 44px #071e2450}
+.portrait-frame img{width:100%;height:100%;object-fit:cover;border-radius:50%;background:#d8d6cb}
+.portrait-frame::after{content:"";position:absolute;inset:-13px;border:1px dashed #e2bb7d88;border-radius:50%;pointer-events:none}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border-radius:10px;padding:12px 20px;background:#bf9462;color:#192f33;font-weight:760;text-decoration:none;border:1px solid transparent;transition:transform .16s,background .16s}
+.btn:hover{transform:translateY(-2px);background:#d7a96f}
+.btn.secondary{border-color:#89a7a2;background:transparent;color:white}.btn.secondary:hover{background:#ffffff18}
+.strata{height:27px;background:linear-gradient(to bottom,#b38862 0 20%,#bfae92 20% 39%,#65877d 39% 55%,#355c5e 55% 73%,#263f45 73% 100%)}
+main{padding:64px 0 80px}
+.eyebrow{font-size:.73rem;text-transform:uppercase;letter-spacing:.17em;color:var(--jade);font-weight:830}
+h2{font-size:clamp(1.65rem,3vw,2.3rem);line-height:1.2;letter-spacing:-.03em;margin:8px 0 16px}
+.section-head{margin-bottom:25px}
+.section-head p{max-width:730px;color:var(--slate);margin:0}
+.featured{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-bottom:70px}
+.panel{border-radius:18px;padding:34px;background:white;border:1px solid var(--line);box-shadow:0 10px 28px #1533340a}
+.featured .panel.primary{background:linear-gradient(145deg,#e8f0ed,#f7f7f1);border-color:#cfdfd8}
+.tag{display:inline-flex;border-radius:30px;background:#d1e6df;color:#215d58;padding:5px 11px;letter-spacing:.07em;font-weight:800;font-size:.68rem;text-transform:uppercase}
+.panel h3{font-size:1.53rem;letter-spacing:-.025em;line-height:1.27;margin:16px 0 10px}
+.panel p{color:#536769;max-width:600px}.panel .btn{background:var(--jade);color:white;margin-top:8px}.panel .btn:hover{background:#195c5a}
+.mini-layers{display:flex;gap:4px;height:6px;margin:25px 0 0}.mini-layers span{flex:1;border-radius:5px;background:#8e7663}.mini-layers span:nth-child(2){background:#b7a37c}.mini-layers span:nth-child(3){background:#6f8b80}.mini-layers span:nth-child(4){background:#294d51}
+.meta{font-size:.88rem;color:#607476}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.profile{display:flex;flex-direction:column;min-height:157px;justify-content:space-between;background:white;border:1px solid var(--line);border-radius:14px;padding:23px;text-decoration:none;box-shadow:0 7px 23px #16373a08;transition:transform .16s,box-shadow .16s}
+.profile:hover{transform:translateY(-3px);box-shadow:0 13px 24px #16373a17}
+.profile .symbol{color:var(--jade);font-size:1.3rem}.profile strong{font-size:1.1rem}.profile small{color:var(--slate);font-size:.84rem}
+.profile .open{color:#297471;font-size:.83rem;font-weight:720}
+.section{margin-top:66px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+.about p{color:var(--slate);margin-bottom:0}.geology-art{border-radius:18px;overflow:hidden;background:#e5ebe4;border:1px solid var(--line);min-height:250px}
+.geology-art svg{display:block;width:100%;height:100%}
+.share{display:flex;align-items:center;gap:29px;background:var(--deep);border-radius:18px;color:white;padding:28px 34px}
+.share .qr{width:155px;height:155px;object-fit:contain;background:white;padding:10px;border-radius:10px}
+.share h3{font-size:1.4rem;margin:0 0 7px}.share p{color:#d0dfdb;margin:0 0 12px}.share a{color:#f5c389;overflow-wrap:anywhere}
+footer{border-top:1px solid var(--line);background:#ebf0eb;color:#4a6160;text-align:center;padding:26px 12px;font-size:.85rem}
+@media(max-width:780px){.hero{grid-template-columns:1fr;text-align:center;padding:52px 0 70px}.portrait-frame{grid-row:1;margin:auto;width:160px;height:160px}.kicker{justify-content:center}.ctas{justify-content:center}.nav{gap:12px}.featured,.about{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.share{flex-direction:column;text-align:center}.topbar{flex-direction:column}.featured{margin-bottom:52px}}
+@media(max-width:460px){.container{width:min(100% - 30px,1120px)}.hero h1{font-size:2.45rem}.panel{padding:24px}.btn{width:100%}}
 </style>
 </head>
-<div style="text-align:center; padding:25px;">
-  <a href="artigos.html"
-     style="background:#216575; color:white;
-     padding:15px 25px; border-radius:8px;
-     text-decoration:none; font-weight:bold;">
-    ACESSAR MINHAS PUBLICAÇÕES CIENTÍFICAS
-  </a>
-</div><body>
-<header><div class="wrap hero"><div class="portrait-placeholder" id="photoPlaceholder" aria-label="Espaço reservado para foto de Daniel Fernandes">DF</div><img class="portrait" id="photo" src="foto-perfil.jpg" alt="Fotografia do Prof. Dr. Daniel Fernandes" style="display:none" onload="this.style.display='block';document.getElementById('photoPlaceholder').style.display='none'" onerror="this.remove()"><div class="hero-text"><div class="eyebrow">Portfólio acadêmico</div><h1>Publicações científicas</h1><div class="hero-name">Prof. Dr. Daniel Fernandes · UFRRJ</div><p>Geociências · Hidrossedimentologia · Geologia Ambiental · Dinâmica Costeira</p><p>Artigos científicos, pesquisas e perfis acadêmicos reunidos em um único endereço.</p></div></div></header>
-<main class="wrap"><section class="intro"><strong>Sobre as pesquisas</strong><p>Estudos voltados aos processos geológicos, hidrossedimentológicos e costeiros, incluindo modelagem ambiental e gestão de bacias hidrográficas.</p><small>Os títulos e dados dos artigos ainda serão cadastrados. Os perfis acadêmicos abaixo já possuem seus links.</small></section>
-<section><h2>Artigos e publicações</h2><div class="cards">
-<article class="card"> <div class="tag">52º Congresso Brasileiro de Geologia</div><h3>Referências Bibliográficas — 52º CBG</h3><div class="meta">Fernandes & Castro (2024)</div><p>Referências bibliográficas do trabalho científico apresentado no 52º Congresso Brasileiro de Geologia.</p><a class="action"href="Referencias_Bibliograficas_52CBG.pdf"target="_blank"rel="noopener noreferrer">Abrir referências bibliográficas (PDF) </a></article>
-  <article class="card"><div class="tag">Publicação 01</div><h3>[Inserir título completo do artigo]</h3><div class="meta">[Autores] · [Revista] · [Ano]</div><p>[Breve descrição do estudo e dos principais resultados.]</p><span class="action disabled" aria-disabled="true">Link a inserir</span><small>DOI: [inserir DOI]</small></article>
-<article class="card"><div class="tag">Publicação 02</div><h3>[Inserir título completo do artigo]</h3><div class="meta">[Autores] · [Revista] · [Ano]</div><p>[Breve descrição do estudo e dos principais resultados.]</p><span class="action disabled" aria-disabled="true">Link a inserir</span><small>DOI: [inserir DOI]</small></article>
-<article class="card"><div class="tag">Publicação 03</div><h3>[Inserir título completo do artigo]</h3><div class="meta">[Autores] · [Revista] · [Ano]</div><p>[Breve descrição do estudo e dos principais resultados.]</p><span class="action disabled" aria-disabled="true">Link a inserir</span><small>DOI: [inserir DOI]</small></article>
+<body>
+<header>
+<svg class="topo" viewBox="0 0 1100 580" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<g fill="none" stroke="#8fb8ac" stroke-width="1.3">
+<path d="M650 -20C520 110 670 150 830 135s260 38 250 160-185 105-235 188"/>
+<path d="M678 -30C548 104 690 171 839 158s237 39 218 148-176 104-186 186"/>
+<path d="M709 -30C577 95 708 187 855 183s203 43 179 135-148 101-137 166"/>
+<path d="M743 -20C615 100 737 207 868 214s167 51 144 118-108 84-92 147"/>
+<path d="M774 -10C666 103 762 231 880 243s125 52 110 107-74 66-46 122"/>
+<path d="M803 10C711 116 788 252 893 271s89 55 73 94-40 46 1 101"/>
+<path d="M837 30C754 131 823 279 905 298s53 57 45 84-14 36 26 86"/>
+<path d="M867 47C795 146 850 297 922 327s25 48 19 68 2 33 42 75"/>
+</g></svg>
+<div class="container">
+<div class="topbar"><div class="brand">DANIEL FERNANDES <span>• GEOCIÊNCIAS</span></div>
+<nav aria-label="Navegação principal"><a href="#publicacoes">Publicações</a><a href="#pesquisa">Pesquisa</a><a href="#perfis">Perfis</a><a href="#compartilhar">Compartilhar</a></nav></div>
+<section class="hero">
+<div>
+<div class="kicker">Pesquisa • Sedimentos • Litoral</div>
+<h1>Geologia que conecta processos, paisagens e ciência.</h1>
+<p class="identity">Prof. Dr. Daniel Fernandes · Departamento de Geociências — UFRRJ</p>
+<p class="specialties">Geologia Costeira &nbsp; / &nbsp; Hidrossedimentologia &nbsp; / &nbsp; Geologia Ambiental</p>
+<div class="ctas"><a class="btn" href="artigos.html">Explorar artigos científicos ↗</a><a class="btn secondary" href="#pesquisa">Conhecer as linhas de pesquisa ↓</a></div>
+</div>
+<div class="portrait-frame"><img src="foto-perfil.jpg" alt="Fotografia do Prof. Dr. Daniel Fernandes"></div>
+</section>
+</div></header>
+<div class="strata" aria-hidden="true"></div>
+<main class="container">
+<section id="publicacoes">
+<div class="section-head"><div class="eyebrow">Produção científica</div><h2>Publicações & materiais acadêmicos</h2><p>Uma seleção de trabalhos científicos de autoria e coautoria, com acesso organizado aos artigos e materiais complementares.</p></div>
+<div class="featured">
+<div class="panel primary"><span class="tag">Artigos científicos</span><h3>Todos os artigos em um só lugar</h3><p>Consulte o catálogo de trabalhos publicados em periódicos científicos nacionais e internacionais, com referências bibliográficas e links de acesso.</p><a class="btn" href="artigos.html">Acessar meus artigos científicos ↗</a><div class="mini-layers" aria-hidden="true"><span></span><span></span><span></span><span></span></div></div>
+<div class="panel"><span class="tag">52º CBG</span><h3>Referências bibliográficas</h3><div class="meta">Fernandes &amp; Castro (2024)</div><p>Documento com as referências bibliográficas do trabalho divulgado no 52º Congresso Brasileiro de Geologia.</p><a class="btn" href="Referencias_Bibliograficas_52CBG.pdf" target="_blank" rel="noopener noreferrer">Visualizar documento PDF ↗</a></div>
+</div>
+</section>
+<section class="section about" id="pesquisa">
+<div><div class="eyebrow">Áreas de atuação</div><h2>Da bacia hidrográfica à zona costeira</h2><p>Pesquisas relacionadas à dinâmica de sedimentos, à evolução de paisagens costeiras, aos processos erosivos e à resposta dos ambientes naturais às mudanças ambientais.</p><p>O trabalho integra observações de campo, análise de dados, geotecnologias e modelagem de processos hidrossedimentológicos.</p></div>
+<div class="geology-art" aria-label="Ilustração esquemática de camadas geológicas e paisagem costeira">
+<svg viewBox="0 0 500 300" role="img" aria-label="Perfil ilustrativo com montanhas, mar e camadas de rochas sedimentares"><rect width="500" height="300" fill="#e7ece6"/><circle cx="414" cy="62" r="30" fill="#d8ae78" opacity=".75"/><path d="M0 146L70 114L117 133L186 62L241 125L290 108L333 145L500 146V300H0Z" fill="#73867b"/><path d="M0 164L80 150L119 156L195 89L254 163L316 139L500 162V300H0Z" fill="#445f61"/><path d="M0 195C107 173 170 196 254 196S409 189 500 182V300H0Z" fill="#b8a68b"/><path d="M0 217C110 200 170 225 265 217S420 207 500 210V300H0Z" fill="#bf8e66"/><path d="M0 242C107 224 189 254 270 241S409 234 500 237V300H0Z" fill="#6d8176"/><path d="M0 263C106 256 191 272 280 266S404 261 500 265V300H0Z" fill="#344f54"/><path d="M337 163C394 148 449 151 500 147V183C441 190 387 185 337 192Z" fill="#78b6b2"/><path d="M350 173C395 160 455 168 490 160" fill="none" stroke="#d6e9de" stroke-width="3"/><g fill="none" stroke="#eee7d8" stroke-width="1.3" opacity=".6"><path d="M32 134L73 122L105 141"/><path d="M164 113L194 84L218 126"/><path d="M271 147L312 138L338 154"/></g></svg>
+</div>
+</section>
+<section class="section" id="perfis"><div class="section-head"><div class="eyebrow">Conexões acadêmicas</div><h2>Encontre meus perfis</h2><p>Currículo, identificação científica e trajetória profissional em plataformas externas.</p></div>
+<div class="cards">
+<a class="profile" href="https://lattes.cnpq.br/2662567510206158" target="_blank" rel="noopener noreferrer"><span class="symbol">◈</span><strong>Currículo Lattes</strong><small>Produção científica e trajetória acadêmica</small><span class="open">Visitar perfil ↗</span></a>
+<a class="profile" href="https://www.linkedin.com/in/mscdanielfernandes/" target="_blank" rel="noopener noreferrer"><span class="symbol">↗</span><strong>LinkedIn</strong><small>Experiência profissional e conexões</small><span class="open">Visitar perfil ↗</span></a>
+<a class="profile" href="https://orcid.org/0000-0003-4218-8198" target="_blank" rel="noopener noreferrer"><span class="symbol">◎</span><strong>ORCID</strong><small>Identificador de pesquisador: 0000-0003-4218-8198</small><span class="open">Visitar perfil ↗</span></a>
 </div></section>
-<section><h2>Perfis acadêmicos e redes sociais</h2><div id="profiles" class="profile-grid" aria-label="Redes sociais e perfis acadêmicos"></div><p class="meta">Lattes, LinkedIn e ORCID estão ativos. Outros perfis poderão ser adicionados posteriormente.</p></section>
-<section><h2>QR Code da página</h2><div class="qrpanel"><div><strong>Compartilhe este portfólio</strong><p>Depois de publicar esta página, cole seu endereço público abaixo. O código poderá ser impresso em banners, cartões e apresentações.</p><label for="publicUrl"><strong>Endereço público da página</strong></label><input type="url" id="publicUrl" placeholder="https://fernandesufrrj.github.io/Fernandesgeol.github.io/" autocomplete="url"><button id="generateQr" type="button">Gerar QR Code</button> <button id="saveQr" type="button" disabled>Salvar QR como PNG</button><p id="qrmsg" role="status">O QR Code será habilitado quando você informar a URL pública (https://...).</p></div><canvas id="qrCanvas" width="210" height="210" aria-label="QR Code para a página publicada"></canvas></div></section>
-<section style="text-align:center; margin:30px auto; padding:24px;">
-  <h2>Minhas Publicações Científicas</h2>
-  <p>Consulte meus artigos científicos publicados
-     em periódicos nacionais e internacionais.</p>
-  <a href="artigos.html"
-     style="display:inline-block; padding:14px 24px;
-            background:#216575; color:white;
-            text-decoration:none; border-radius:8px;
-            font-weight:bold;">
-    Acessar meus artigos científicos
-  </a>
-</section></main><footer class="foot">Prof. Dr. Daniel Fernandes · Departamento de Geociências · UFRRJ</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js" defer></script>
-<script>
-/* PREENCHA AQUI OS LINKS VERDADEIROS ANTES DE PUBLICAR */
-const PERFIS = [
-  {nome:'Currículo Lattes', descricao:'Produção acadêmica e currículo', url:'https://lattes.cnpq.br/2662567510206158'},
-  {nome:'LinkedIn', descricao:'Perfil profissional', url:'https://www.linkedin.com/in/mscdanielfernandes/'},
-  {nome:'ORCID', descricao:'Identificador de pesquisador', url:'https://orcid.org/0000-0003-4218-8198'},
-  {nome:'Google Scholar', descricao:'Citações e artigos', url:''},
-  {nome:'Instagram', descricao:'Divulgação científica', url:''},
-  {nome:'ResearchGate', descricao:'Rede de pesquisadores', url:''}
-];
-const profiles=document.getElementById('profiles');
-PERFIS.forEach(p=>{
-  const a=document.createElement('a'); a.className='profile';
-  const safe=/^https:\/\//i.test(p.url.trim());
-  if(safe){a.href=p.url.trim();a.target='_blank';a.rel='noopener noreferrer';}
-  a.textContent=p.nome;
-  const sub=document.createElement('span');sub.textContent=safe?p.descricao:'Link ainda não cadastrado';a.appendChild(sub);profiles.appendChild(a);
-});
-const urlInput=document.getElementById('publicUrl'), msg=document.getElementById('qrmsg'),
-  saveBtn=document.getElementById('saveQr'),canvas=document.getElementById('qrCanvas');
-if(location.protocol==='https:' && location.hostname) urlInput.value=location.origin+location.pathname;
-function generate(){
-  let url;
-  try{url=new URL(urlInput.value.trim());if(!['https:','http:'].includes(url.protocol)||!url.hostname)throw Error();}
-  catch(e){msg.textContent='Insira um endereço público completo começando com https://';return;}
-  if(typeof QRious==='undefined'){msg.textContent='Biblioteca de QR indisponível. Conecte-se à internet e recarregue esta página.';return;}
-  new QRious({element:canvas,value:url.href,size:210,level:'H',foreground:'#103049',background:'#ffffff'});
-  saveBtn.disabled=false;msg.textContent='QR Code gerado para '+url.href+' — confirme que a página está publicada antes de divulgar.';
-}
-document.getElementById('generateQr').addEventListener('click',generate);
-saveBtn.addEventListener('click',()=>{const link=document.createElement('a');link.download='qr-code-publicacoes.png';link.href=canvas.toDataURL('image/png');link.click();});
-if(location.protocol==='https:') window.addEventListener('load',generate);
-</script></body></html>
+<section class="section" id="compartilhar"><div class="share"><img class="qr" src="qrcode-portfolio.png" alt="QR Code que direciona ao portfólio acadêmico"><div><div class="kicker">Divulgação científica</div><h3>Compartilhe este portfólio</h3><p>Escaneie o QR Code ou utilize o endereço abaixo em congressos, apresentações, materiais acadêmicos e redes sociais.</p><a href="https://fernandesufrrj.github.io/Fernandesgeol.github.io/">fernandesufrrj.github.io/Fernandesgeol.github.io/</a></div></div></section>
+</main>
+<footer>© 2026 · Prof. Dr. Daniel Fernandes · Departamento de Geociências · Universidade Federal Rural do Rio de Janeiro</footer>
+</body></html>
